@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
   <body>
+    <button onclick="box()">Play Game</button>
     <script>
       function box() {
         var confirm = confirm("o shit I'm a game");
-        if (confirm) {
-          box();
+        if (confirm == true) {
+          alert("u win");
         } else {
           alert("ur a scrub");
           box();
         }
       }
-      
-      box();
     </script>
     <h3>Game of the Year 2020</h3>
   </body>
