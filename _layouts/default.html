@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/foundation.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/foundation.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
 
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="foundation.js"></script>
-  </head>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="foundation.js"></script>
+</head>
+<body>
+  <div class="site">
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <div class="header">
+
+          <!-- Top Bar -->
+          <nav class="top-bar hide-for-small">
+            <ul class="title-area">
+              <!-- Title Area -->
+              <li class="name">
+                <h1><a href="/">Aikido.io</a></h1>
+              </li>
+            </ul>
+
+            <!-- All tabs on right side  -->
+            <section class="top-bar-section">
+              <ul class="right">
+                <li class="name">
+                  <a href="/game.html">GAME</a>
+                </li>
+
+                <li class="name">
+                  <a href="/memes/memes.html">MEMES</a>
+                </li>
+              </ul>
+            </section>
+          </nav>
+        </div>
+
+        <!-- Side bar -->
+        <nav class="tab-bar show-for-small">
+          <a class="left-off-canvas-toggle" href="#">
+            <span>
+              <&nbsp;Aikdo.io
+            </span>
+          </a>
+        </nav>
+
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li>
+              <label>Menu</label>
+            </li>
+            <li>
+              <a href="/">Aikdo.io</a>
+            </li>
+            <li>
+              <a href="game.html">Game</a>
+            </li>
+            <li>
+              <a href="/memes/memes.html">Memes</a>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="content">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
